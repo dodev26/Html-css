@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+.container {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px;
+}
+.about-headding {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  position: relative;
+}
+.about-headding::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-color: #fa5252;
+  top: 50%;
+  margin-left: 20px;
+}
+.about-content {
+  margin-top: 30px;
+}
+.about-content p {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.about-content p + p {
+  margin-top: 20px;
+}
+.service-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 30px 0px;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.service-item {
+  width: 350px;
+  padding: 20px 27px;
+  border-radius: 10px;
+  background-color: #fcf4ff;
+  display: flex;
+  gap: 20px;
+}
+.service-content {
+  width: 243px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-content span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+footer {
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8fbfb;
+  padding: 40px 60px;
+}
+.footer-title {
+  font-weight: 500px;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+.brand-list {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-around;
+}
+.brand-list img {
+  width: 86px;
+}
